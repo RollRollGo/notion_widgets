@@ -4,7 +4,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.png$/,
+        test: /\.(png|ttf)$/,
         type: "asset",
       },
     ],
