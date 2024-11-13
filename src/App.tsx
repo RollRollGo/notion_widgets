@@ -107,6 +107,43 @@ const App = () => {
         <div id="divider"></div>
         {renderFooter()}
       </div>
+      <style jsx>
+        {`
+          #background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+          }
+          #container {
+            font-size: 16px;
+            background-color: #ffedf2;
+
+            max-width: 350px;
+            min-width: 160px;
+            width: 100%;
+            padding: 24px 18px 18px;
+            line-height: 1.5em;
+
+            border: 1px solid #d2c3c7;
+            border-radius: 5px;
+          }
+          #quote {
+            margin: 0 20px;
+          }
+          #author {
+            text-align: right;
+            font-style: italic;
+            font-size: 13px;
+            margin-top: 10px;
+          }
+          #divider {
+            height: 1px;
+            margin: 10px 0px;
+            background-color: #c9c9c9;
+          }
+        `}
+      </style>
     </div>
   );
 };
