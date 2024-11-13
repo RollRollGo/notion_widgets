@@ -1,15 +1,12 @@
 import { useEffect } from "react";
 import LogoFigure from "./assets/logo_figure.png";
+import { getRandomIndex } from "./util/number";
 import "./App.css";
 
 const App = () => {
   useEffect(() => {
     document.title = "樱桃小丸子语录";
   }, []);
-
-  function getRandomIndex(max: number): number {
-    return Math.floor(Math.random() * max);
-  }
 
   function generateQuote() {
     const QUOTES = [
