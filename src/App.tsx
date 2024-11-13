@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import LogoFigure from "./assets/logo_figure.png";
 import { getRandomIndex } from "./util/number";
 import "./App.css";
+import { RollRollGo_Xiaohongshu_URL } from "./constant";
 
 const QUOTES = [
   "与其过别人的节，不如睡自己的觉。",
@@ -73,24 +74,38 @@ const App = () => {
     return "🍒 " + QUOTES[random_index];
   };
 
+  const renderFooter = () => {
+    return (
+      <div id="footer">
+        <img src={LogoFigure} width={30} height={30} />
+        <span style={{ marginBottom: -4 }}>
+          Powered by
+          <a href={RollRollGo_Xiaohongshu_URL} target="_blank">
+            RollRollGo
+          </a>
+        </span>
+        <style jsx>
+          {`
+            #footer {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 12px;
+            }
+          `}
+        </style>
+      </div>
+    );
+  };
+
   return (
     <div id="background">
       <div id="container">
         <div id="quote">{generateQuote()}</div>
         <div id="author">——《樱桃小丸子》</div>
         <div id="divider"></div>
-        <div id="footer">
-          <img id="logo" src={LogoFigure} />
-          <span id="info">
-            Powered by
-            <a
-              href="https://www.notion.so/roll-roll-go/s-Home-1beed66eeff84a3cabc455bee81c7237"
-              target="_blank"
-            >
-              RollRollGo
-            </a>
-          </span>
-        </div>
+        {renderFooter()}
       </div>
     </div>
   );

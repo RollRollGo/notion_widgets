@@ -41,20 +41,3 @@ body {
   margin: 10px 0px;
   background-color: #C9C9C9;
 }
-
-#footer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-}
-
-#logo {
-  width: 30px;
-  height: 30px;
-}
-
-#info {
-  margin-bottom: -4px;
-}
