@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import LogoFigure from "./assets/logo_figure.png";
 import "./App.css";
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
         <div id="author">——《樱桃小丸子》</div>
         <div id="divider"></div>
         <div id="footer">
-          <img id="logo" src="../assets/logo_figure.png" />
+          <img id="logo" src={LogoFigure} />
           <span id="info">
             Powered by
             <a

@@ -1,6 +1,13 @@
-import { defineConfig } from '@rsbuild/core';
-import { pluginReact } from '@rsbuild/plugin-react';
+import { pluginReact } from "@rsbuild/plugin-react";
 
-export default defineConfig({
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.png$/,
+        type: "asset",
+      },
+    ],
+  },
   plugins: [pluginReact()],
-});
+};
