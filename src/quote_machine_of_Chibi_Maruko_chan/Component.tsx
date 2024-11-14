@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import LogoFigure from "../assets/logo_figure.png";
 import { getRandomIndex } from "../util/number";
 import "./Component.css";
-import { RollRollGo_Xiaohongshu_URL } from "../constant";
+import { ROLLROLLGO_XIAOHONGSHU_URL } from "../constant";
 
 const QUOTES = [
   "与其过别人的节，不如睡自己的觉。",
@@ -80,7 +80,7 @@ const Component = () => {
         <img src={LogoFigure} width={30} height={30} />
         <span style={{ marginBottom: -4 }}>
           Powered by
-          <a href={RollRollGo_Xiaohongshu_URL} target="_blank">
+          <a href={ROLLROLLGO_XIAOHONGSHU_URL} target="_blank">
             RollRollGo
           </a>
         </span>
