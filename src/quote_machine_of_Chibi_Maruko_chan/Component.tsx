@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import LogoFigure from "./assets/logo_figure.png";
-import { getRandomIndex } from "./util/number";
-import "./App.css";
-import { RollRollGo_Xiaohongshu_URL } from "./constant";
+import LogoFigure from "../assets/logo_figure.png";
+import { getRandomIndex } from "../util/number";
+import "./Component.css";
+import { RollRollGo_Xiaohongshu_URL } from "../constant";
 
 const QUOTES = [
   "与其过别人的节，不如睡自己的觉。",
@@ -64,7 +64,7 @@ const QUOTES = [
   "作业就是最后一天做才有意义。",
 ];
 
-const App = () => {
+const Component = () => {
   useEffect(() => {
     document.title = "樱桃小丸子语录";
   }, []);
@@ -148,4 +148,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Component;
