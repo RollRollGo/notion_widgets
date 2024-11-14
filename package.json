@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "create": "node scripts/createWidget.js",
+    "start": "node scripts/startWidget.js",
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
     "preview": "rsbuild preview"
