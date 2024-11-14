@@ -20,5 +20,6 @@ module.exports = {
     filename: "[name].bundle.js",
     chunkFilename: "[name].chunk.js",
     publicPath: "/",
+    assetPrefix: "/notion_widgets/",
   },
 };
